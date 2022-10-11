@@ -31,6 +31,11 @@ public class Sample31Controller {
     return "sample33.html";
   }
 
+  @GetMapping("step7")
+  public String sample37() {
+    return "sample37.html";
+  }
+
   @PostMapping("step6")
   public String sample36(@RequestParam Integer hiku1, @RequestParam Integer hiku2, ModelMap model) {
     int kekka = hiku1 - hiku2;
